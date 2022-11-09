@@ -15,6 +15,9 @@ Why are we using Bazel's build system and not "make"?
 go mod download
 ```
 
+# Updating our WORKSPACE file with dependencies from go.mod
+bazel run //:gazelle -- update-repos -from_file=go.mod
+
 # Build
 All applications inside apps folder:
 1) my Memories App
